@@ -1,0 +1,6 @@
+      - name: Fix compiling & Build Package
+        id: build_package
+        run: |
+          mkdir -p theos/lib/iphone/rootless
+          cd ${{ github.workspace }}/main
+          ...
