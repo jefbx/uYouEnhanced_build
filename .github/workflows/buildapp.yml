@@ -173,3 +173,9 @@ jobs:
           name: v${{ env.YOUTUBE_VERSION }}-${{ env.UYOU_VERSION }}-(${{ github.run_number }})
           files: main/packages/*.ipa
           draft: true
+      - name: Fix compiling & Build Package
+        id: build_package
+        run: |
+          mkdir -p theos/lib/iphone/rootless
+          cd ${{ github.workspace }}/main
+          ...
